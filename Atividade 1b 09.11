@@ -1,0 +1,87 @@
+
+programa
+{
+	inclua biblioteca Calendario --> c
+
+	funcao inicio()
+	{
+		inteiro dia_mes_atual = 0
+		inteiro mes_atual = 0
+		inteiro dias_base_mes = 30
+
+		//Anotação dias extras em 2020 em relação a base de 30 dias (acumulados a cada mês que já passou)
+		inteiro m1 = 1
+		inteiro m2 = 0 //Ano bissexto
+		inteiro m3 = 1
+		inteiro m4 = 1
+		inteiro m5 = 2
+		inteiro m6 = 2
+		inteiro m7 = 3
+		inteiro m8 = 4
+		inteiro m9 = 4
+		inteiro m10 = 5
+		inteiro m11 = 5
+		inteiro m12 = 6
+		
+		
+		dia_mes_atual = c.dia_mes_atual()
+		mes_atual = c.mes_atual()
+		inteiro meses_passados = mes_atual - 1
+		inteiro extra = 0
+
+		se (meses_passados == 0)
+		{
+			extra = 0
+		}
+		se (meses_passados == 1)
+		{
+			extra = 1
+		}
+		se (meses_passados == 2)
+		{
+			extra = 0
+		}
+		se (meses_passados == 3)
+		{
+			extra = 1
+		}
+		se (meses_passados == 4)
+		{
+			extra = 1
+		}
+		se (meses_passados == 5)
+		{
+			extra = 2
+		}
+		se (meses_passados == 6)
+		{
+			extra = 2
+		}
+		se (meses_passados == 7)
+		{
+			extra = 3
+		}
+		se (meses_passados == 8)
+		{
+			extra = 4
+		}
+		se (meses_passados == 9)
+		{
+			extra = 4
+		}
+		se (meses_passados == 10)
+		{
+			extra = 5
+		}
+		se (meses_passados == 11)
+		{
+			extra = 5
+		}
+		
+		inteiro total_dias = (dias_base_mes * meses_passados) + dia_mes_atual + extra
+		inteiro faltam = 366 - total_dias
+
+		escreva("Faltam ", faltam, " dias para o ano acabar")
+		
+	}
+}
