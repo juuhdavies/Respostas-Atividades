@@ -1,0 +1,12 @@
+programa
+{
+	inclua biblioteca Calendario
+	
+	funcao inicio()
+	{
+		inteiro mes_atual = 0
+		mes_atual= Calendario.mes_atual()
+
+		escreva("Faltam ", 12 - mes_atual, " mês/meses para acabar o ano")
+	}
+}
