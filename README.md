@@ -1,3 +1,3 @@
-# Respostas-Atividades-
+# Respostas-Atividades
 
 Respostas das atividaades de Algoritmos
