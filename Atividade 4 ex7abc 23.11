@@ -1,0 +1,35 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	
+	funcao inicio()
+	{
+		//variaveis iniciais
+		const inteiro Valor_PS5 = 1300 // em dólares
+		inteiro economias
+		real dolar = 5.43 // valor do dólar em 23/11
+		inteiro Ordem_Fenix = 50
+
+		escreva("Quantos reais você tem? ")
+		leia(economias)
+
+
+		real economias_dolar = m.arredondar(economias / dolar, 2)
+		escreva(economias_dolar)
+		real para_PS5 = m.arredondar(Valor_PS5 - economias_dolar, 2)
+
+		limpa()
+
+		escreva("Faltam ", para_PS5, " dólares para poder comprar o PlayStation 5") 
+
+		real Valor_PS5_reais = m.arredondar(Valor_PS5 * dolar, 2)
+		real para_PS5_reais = Valor_PS5_reais - economias
+
+		escreva("\nFaltam ", para_PS5_reais, " reais para comprar o PLayStation 5")
+
+		inteiro quant_livros = Valor_PS5_reais / Ordem_Fenix
+
+		escreva("\nCom o valor do PlayStation 5 poderiam ser comprados ", quant_livros, " livros de Harry Potter e a Ordem da Fenix")
+		
+	}
+}
