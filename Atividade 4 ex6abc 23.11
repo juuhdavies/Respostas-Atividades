@@ -1,0 +1,27 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//variaveis
+		inteiro area 
+		inteiro largura
+		inteiro comprimento
+
+		escreva("Insira o comprimento do gramado: ")
+		leia(comprimento)
+		escreva("\nInsira a largura do gramado: ")
+		leia(largura)
+
+		area = largura * comprimento
+
+		escreva("\nA área do gramado é: ", area, " m²")
+
+		inteiro dobro_area = area * 2
+		inteiro dobro_area_cm = dobro_area * 100
+
+		escreva("\nO dobro da área é: ", dobro_area, " m², ou ", dobro_area_cm, " cm²")
+		
+		
+	}
+}
