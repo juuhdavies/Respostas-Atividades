@@ -1,0 +1,20 @@
+programa
+{
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+		//Valores dos livros na promoção
+		const real Pedra_Filo = 26.90
+		const real Cam_Secr = 34.10
+		const real Pri_Azka = 29.90
+		const real Cali_Fogo = 26.90
+		const real Ord_Fenix = 50.00
+		const real Eni_Prin = 26.90
+
+		real ValorTotal = (Pedra_Filo + Cam_Secr + Pri_Azka + Cali_Fogo + Ord_Fenix + Eni_Prin)
+		//Arredondar para duas casas após a virgula
+		real ValorFinal = Matematica.arredondar(ValorTotal, 2)
+		escreva("O valor total da compra dos livros é: R$ ", ValorFinal)
+	}
+}
