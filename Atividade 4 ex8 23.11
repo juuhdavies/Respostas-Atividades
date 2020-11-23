@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num
+		inteiro resultado
+
+		escreva("Insira um número: ")
+		leia(num)
+
+		limpa()
+
+		//loop para tabuada
+		para(inteiro i = 1 ; i <= 10; i++)
+		{
+			resultado = num * i
+			escreva( num, " x ", i, " = ", resultado, "\n")
+		}
+	}
+}
