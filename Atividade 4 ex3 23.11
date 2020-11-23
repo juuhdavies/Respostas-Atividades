@@ -1,0 +1,19 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//variaveis
+		cadeia mae = "Tess"
+		cadeia filha = "Anna"
+		//variavel auxiliar
+		cadeia x = mae
+
+		escreva("Antes da troca\n", "Mãe: ", mae, "\nFilha: ", filha, "\n")
+		
+		mae = filha
+		filha = x
+
+		escreva("\nDepois da troca\n", "Mãe: ", mae, "\n", "Filha: ", filha)
+	}
+}
