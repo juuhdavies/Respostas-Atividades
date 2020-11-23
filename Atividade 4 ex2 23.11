@@ -1,0 +1,26 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//Variaveis para as notas dos bimestres
+
+		inteiro NotaB1
+		inteiro NotaB2
+		inteiro NotaB3
+		inteiro NotaB4
+
+		escreva("Informe sua nota do Primeiro Bimestre: ")
+		leia(NotaB1)
+		escreva("Informe sua nota do Segundo Bimestre: ")
+		leia(NotaB2)
+		escreva("Informe sua nota do Terceiro Bimestre: ")
+		leia(NotaB3)
+		escreva("Informe sua nota do Quarto Bimestre: ")
+		leia(NotaB4)
+
+		inteiro media = (NotaB1 + NotaB2 + NotaB3+ NotaB4)/4
+
+		escreva("Sua média é: ", media)
+	}
+}
