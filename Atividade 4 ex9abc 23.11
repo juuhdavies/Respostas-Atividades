@@ -1,0 +1,33 @@
+programa
+{
+	inclua biblioteca Matematica 
+	
+	funcao inicio()
+	{
+		//variaveis
+		inteiro peso_de_peixes
+		inteiro limite_sem_multa = 50
+		real valor_kilo_extra = 4.5
+		inteiro excesso
+		real multa
+
+		escreva("Insira o peso dos peixes: ")
+		leia(peso_de_peixes)
+
+		limpa()
+		
+		se(peso_de_peixes > limite_sem_multa)
+		{
+			excesso = peso_de_peixes - limite_sem_multa
+			multa = Matematica.arredondar(excesso * valor_kilo_extra, 2)
+
+			escreva("Para ", peso_de_peixes, " kilos de peixe pescados, o excesso em relação ao regulamento de pesca é: ", excesso)
+			escreva("\nA multa a ser paga será: R$", multa)
+		}
+
+		senao
+		{
+			escreva("O peso dos peixes se encontra dentro dos limites do regulameto, não há multa")
+		}
+	}
+}
