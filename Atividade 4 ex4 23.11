@@ -1,0 +1,17 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//variavies
+		real m 
+		real cm 
+
+		escreva("Metros: ")
+		leia(m)
+
+		cm = m * 100
+
+		escreva(m, " são: ", cm, " centimetros")
+	}
+}
