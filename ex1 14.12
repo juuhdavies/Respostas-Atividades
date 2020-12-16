@@ -1,0 +1,22 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//ask for number imput
+		inteiro num1, num2
+		escreva("Insira dois números: ")
+		leia(num1, num2)
+		limpa()
+
+		//If num1 is bigger, print num1, if else print num2
+		se(num1 > num2)
+		{
+			escreva(num1)
+		}
+		senao
+		{
+			escreva(num2)
+		}
+	}
+}
