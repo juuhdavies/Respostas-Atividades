@@ -1,0 +1,79 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//sintomas comuns
+		cadeia coriza 
+		cadeia tosse 
+		cadeia febre
+		cadeia dor_garganta
+		//sintoma grave
+		cadeia dificil_respirar
+
+		inteiro num_sintomas = 0
+	
+
+		escreva("Qual dos sintomas abaixo você apresenta?\n(responda com s para sim e n para não)\n")
+		escreva("Coriza\n")
+		leia(coriza)
+		escreva("Tosse\n")
+		leia(tosse)
+		escreva("Febre\n")
+		leia(febre)
+		escreva("Dor de Garganta\n")
+		leia(dor_garganta)
+		escreva("Dificuldade para Respirar\n")
+		leia(dificil_respirar)
+
+		para(inteiro i = 0 ; i < 1; i++)
+		{
+
+			se(coriza == "s")
+			{
+				num_sintomas++
+			}
+			se(tosse == "s")
+			{
+				num_sintomas++
+			}
+			se(febre == "s")
+			{
+				num_sintomas++
+			}
+			se(dor_garganta == "s")
+			{
+				num_sintomas++
+			}
+			se(dificil_respirar == "s")
+			{
+				num_sintomas++
+			}
+
+		}
+		limpa()
+		//caso a pessoa apresente 2 ou mais sintomas confirma-se que ela está com covid
+		logico covid = num_sintomas >= 2
+
+		se(covid == verdadeiro)
+		{
+			escreva("Você está com covid\n")
+			
+			se(dificil_respirar == "s")
+			{
+				escreva("Você possui um sintoma grave")	
+			}
+			senao
+			{
+				escreva("Você possui apenas sintomas comuns")
+			}
+		}
+		
+		senao
+		{
+			escreva("Você não está com covid")
+		}
+
+		
+	}
+}
