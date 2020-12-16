@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro temp
+		escreva("Insira qual a temperatura atual: ")
+		leia(temp)
+		limpa()
+
+		se(temp > 0)
+		{
+			escreva("A temperatura é positiva")
+		}
+		senao
+		{
+			escreva("A temperatura é negativa")
+		}
+	}
+}
