@@ -1,0 +1,78 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		/*alimentos-codigo
+		inteiro ca_quente = 100
+		inteiro bauru = 101
+		inteiro bauru_ovo = 102
+		inteiro hamburguer = 103
+		inteiro cheese_burg = 104
+		inteiro refri = 105
+		inteiro sement_deuses = 106
+		*/
+
+		//codigo-preço
+		real item1 = 5.00
+		real item2 = 2.60
+		real item3 = 3.80
+		real item4 = 9.00
+		real item5 = 11.00
+		real item6 = 3.00
+		real item7 = 1000.00
+
+		//codigo, quantidade e preço final
+		inteiro codigo
+		inteiro quant
+		real preco
+
+		escreva("Insira o código do item que gostaria de pedir e a quantidade(respectivamente): ")
+		leia(codigo,  quant)
+		limpa()
+
+		se(codigo == 100)
+		{
+			preco = item1 * quant
+			escreva("O valor a ser pago é: ", preco, " reais")
+		}
+		se(codigo == 101)
+		{
+			preco = item2 * quant
+			escreva("O valor a ser pago é: ", preco, " reais")
+		}
+		se(codigo == 102)
+		{
+			preco = item3 * quant
+			escreva("O valor a ser pago é: ", preco, " reais")
+		}
+		se(codigo == 103)
+		{
+			preco = item4 * quant
+			escreva("O valor a ser pago é: ", preco, " reais")
+		}
+		se(codigo == 104)
+		{
+			preco = item5 * quant
+			escreva("O valor a ser pago é: ", preco, " reais")
+		}
+		se(codigo == 105)
+		{
+			preco = item6 * quant
+			escreva("O valor a ser pago é: ", preco, " reais")
+		}
+		se(codigo == 106)
+		{
+			preco = item7 * quant
+			escreva("O valor a ser pago é: ", preco, " reais")
+		}
+		senao
+		{
+			escreva("Insira um código valido")
+		}
+
+		
+		
+		
+	}
+}
