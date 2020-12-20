@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro velocidade
+		
+		escreva("Insira a velocidade do carro: ")
+		leia(velocidade)
+		limpa()
+
+		se(velocidade > 80)
+		{
+			escreva("O carro foi multado", "\n")
+
+			inteiro multa = (velocidade - 80) * 7
+
+			escreva("A multa é de R$", multa,",00")
+		}
+	}
+}
