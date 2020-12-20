@@ -1,0 +1,33 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real nota1, nota2
+
+		escreva("Insira suas notas parciais(de 0 à 10): ")
+		leia(nota1, nota2)
+		limpa()
+
+		se((nota1 > 10 ou nota1 < 0) ou (nota2 > 10 ou nota2 < 0))
+		{
+			escreva("Insira o valor das notas entre 0 e 10")
+			retorne;
+		}
+
+		real media = (nota1 + nota2) / 2
+
+		se(media == 10)
+		{
+			escreva("Aprovado com distinção")
+		}
+		se(media >= 7 e media !=10)
+		{
+			escreva("Aprovado")
+		}
+		senao
+		{
+			escreva("Reprovado")
+		}
+	}
+}
