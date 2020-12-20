@@ -1,0 +1,71 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	
+	funcao inicio()
+	{
+		inteiro num1, num2, num3
+
+		escreva("Insira 3 números: ")
+		leia(num1, num2, num3)
+		limpa()
+
+		inteiro maior_num = m.maior_numero(num1, num2)
+		inteiro menor_num
+		inteiro mid_num
+		
+		se(maior_num <= num3)
+		{
+			maior_num = num3
+
+			menor_num = m.menor_numero(num1, num2)
+
+			se(menor_num == num2)
+			{
+				mid_num = num1
+			}
+			senao
+			{
+				mid_num = num2
+			}
+			
+		}
+
+		senao
+		{
+			se(maior_num == num2)
+			{
+				menor_num = m.menor_numero(num1, num3)
+
+				se(menor_num == num1)
+				{
+					mid_num = num3
+				}
+				senao
+				{
+					mid_num = num1
+				}
+			}
+
+			senao
+			{
+				menor_num = m.menor_numero(num2, num3)
+
+				se(menor_num == num2)
+					{
+						mid_num = num3
+					}
+				senao
+					{
+						mid_num = num2
+					}
+			}
+
+			
+			
+		}
+
+		escreva(maior_num,"\n", mid_num,"\n", menor_num)
+
+	}
+}
