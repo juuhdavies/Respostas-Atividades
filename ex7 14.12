@@ -1,0 +1,47 @@
+programa
+{
+	inclua biblioteca Calendario --> c
+	
+	funcao inicio()
+	{
+		inteiro ano
+
+		escreva("Insira um ano: ")
+		leia(ano)
+		limpa()
+
+		se(ano <= 0)
+		{
+			ano = c.ano_atual()
+		}
+		
+		//etapas para determinar se o ano é ou não bissexto
+		inteiro etapa1 = ano % 4
+		inteiro etapa2 = ano % 100
+		inteiro etapa3 = ano % 400
+
+		se(etapa1 == 0)
+		{
+			se(etapa2 == 0)
+			{
+				se(etapa3 == 0)
+				{
+					escreva("O ano é bissexto")
+				}
+				senao
+				{
+					escreva("O ano não é bissexto")
+				}
+			}
+			senao
+			{
+				escreva("O ano é bissexto")
+			}
+
+		}
+		senao
+		{
+			escreva("O ano não é bissexto")
+		}
+	}
+}
