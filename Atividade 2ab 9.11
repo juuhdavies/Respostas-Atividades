@@ -1,0 +1,18 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro GolpM = 800
+		inteiro GuarM = 1200
+
+		inteiro Soma = GolpM  + GuarM 
+
+		escreva("Os itens 'Golpeadores Melosos' e 'Guarda da moita' juntos custam ", Soma, " V-bucks", "\n")
+
+		inteiro desconto = Soma * 0.3
+		inteiro valor_final = Soma - desconto
+		escreva("O valor final dos produtos com 30% de desconto é: ", valor_final, " V-bucks")
+		
+	}
+}
